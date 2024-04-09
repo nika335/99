@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>addin inventory</title>
+</head>
+<body>
+    <form method="post">
+        {% csrf_token %}
+            {{form}}
+        <button type="submit">submit</button>
+        <br>
+        <br>
+        <a href="{% url 'index' %}">Main page</a>
+    </form>
+</body>
+</html>
